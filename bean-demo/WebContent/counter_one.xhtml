@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <h:head>
+        <title>Counter One - Session Scope Test</title>
+    </h:head>
+
+    <h:body>
+		<h3>Counter One - Session Scope Test</h3>
+		
+		<hr/>
+		
+		<br/>
+		
+		Counter value: #{counterOne.value}
+		
+		<br/><br/>
+				
+		<h:form>		
+			<h:commandButton value="Increment" 
+							action="#{counterOne.increment()}" />
+		</h:form>
+		
+    </h:body>
+</html>
